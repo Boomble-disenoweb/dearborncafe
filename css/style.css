@@ -5,8 +5,15 @@ body {
     padding: 0;
 }
 
+:root{
+	--color-blanco:#fff;
+	--color-negro:#000;
+	--bg-footer:#160a07;
+	--bg-text:#e9c8a1;
+}
+
 header {
-    background-color: #fff;
+    background-color: var(--color-blanco);
     border-bottom: 1px solid #ccc;
 }
 
@@ -14,13 +21,12 @@ header {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-weight: 600;
-	color: #000;
+	color: var(--color-negro);
 }
 
 .hero {
     position: relative;
-    text-align: center;
-	
+    text-align: center;	
 }
 
 .btn{
@@ -31,11 +37,18 @@ header {
 	font-weight: 600;
 }
 
+.icon-square{
+	height: auto;
+	width: auto;
+	line-height: 100px;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px 4px #f2f2f2;
+}
+
 #hero h2{
 	margin-top: 5%;
-	
-	
 }
+
 .content {
     padding-top: 5%;
 	padding-left: 5%;
@@ -73,14 +86,20 @@ p{
 	margin-bottom: 20px;
 }
 
+#map{
+	background-color: var(--bg-text);
+	padding: 5% 0;
+}
+
+
 footer{
-	background-color: #160a07;
+	background-color: var(--bg-footer);
 	padding: 50px 0px 50px 150px;
 }
 
 footer h3{
 	font-size: 14px;
-	color: #e9c8a1;
+	color: var(--bg-text);
 	font-weight: 600;
 	margin-bottom: 20px;
 	padding: 0px 0px 0px 40px;
@@ -88,11 +107,11 @@ footer h3{
 
 footer p{
 	font-size: 12px;
-	color: #e9c8a1;
+	color: var(--bg-text);
 	padding: 0px 0px 0px 40px;
 }
 
 footer i{
-	color: #fff;
+	color: var(--color-blanco);
 	font-size: 20px;
 }
