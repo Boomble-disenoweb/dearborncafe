@@ -10,6 +10,7 @@ body {
 	--color-negro:#000;
 	--bg-footer:#160a07;
 	--bg-text:#e9c8a1;
+	--bg-cafe:#362222;
 }
 
 header {
@@ -22,6 +23,23 @@ header {
 	font-size: 14px;
 	font-weight: 600;
 	color: var(--color-negro);
+}
+
+#hero-trabaja{
+	background-color: rgba(0,0,0,0.40);
+	background-blend-mode: multiply;
+	background-image: url( "../img/Hero banner.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 250px 0px;
+	text-align: center;
+	color:#fff;
+}
+
+#postulacion{
+	padding: 10% 0px;
+	background-color: var(--bg-cafe);
+	color: var(--bg-text);
 }
 
 .hero {
@@ -94,7 +112,7 @@ p{
 
 footer{
 	background-color: var(--bg-footer);
-	padding: 50px 0px 50px 150px;
+	padding: 50px 0px 50px 50px;
 }
 
 footer h3{
@@ -114,4 +132,57 @@ footer p{
 footer i{
 	color: var(--color-blanco);
 	font-size: 20px;
+}
+
+
+.app-carousel {
+
+    padding: 0 6%;
+
+}
+
+.app-carousel .center .single-shot {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+}
+
+.app-carousel .single-shot {
+
+    opacity: 0.8;
+
+    transform: scale(0.8);
+
+}
+
+
+
+.app-carousel .owl-dots {
+
+    text-align: center;
+
+}
+
+.app-carousel .owl-dot {
+
+    height: 11px;
+
+    width: 11px;
+
+    border: 2px solid #a49fba !important;
+
+    border-radius: 50%;
+
+    margin: 35px 6px;
+
+}
+
+.app-carousel .owl-dot.active {
+
+    background-color: var(--bg-cafe);
+
+    border: 0 !important;
+
 }
